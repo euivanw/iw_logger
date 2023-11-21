@@ -1,39 +1,35 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# iw_logger
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+This project is an implementation that allow developers to encapsulate their own usage of a logger.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
+The main objective of this project is to create a package that provide a logger encapsulated and by doing this allow developers to use it in many apps rather than create their own encapsulation for each project.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+For now, the package supports only print, however, other clients could be supported in the future.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+Here is an example that make some a log request.
+
+You can also read the unit tests to see all the possibilities that the implementation supports.
 
 ```dart
-const like = 'sample';
+import 'package:iw_logger/iw_logger.dart';
+
+void main() {
+  final LogService service = LogPrintService();
+
+  service.register(
+    log: Log(
+      type: LogType.success,
+      message: 'The operation XPTO succedded.',
+      createdAt: DateTime.now(),
+    ),
+  );
+
+  // Prints:
+  // 2023-11-21T19:58:43.234834Z - [SUCCESS] - The operation XPTO succedded.
+}
 ```
+Feito com &hearts; por Ivan Wilhelm.
 
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+Codificado no [Visual Studio Code](https://code.visualstudio.com) da [Microsoft](https://www.microsoft.com.br)
