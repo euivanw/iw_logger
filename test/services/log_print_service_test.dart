@@ -24,7 +24,7 @@ void main() {
           () => logService.register(
             log: errorLog,
           ),
-          prints('2023-11-13T20:45:52.000Z - [ERROR] - This is an error.\n'),
+          prints('2023-11-13T17:45:52.000 - [ERROR] - This is an error.\n'),
         );
       },
     );
@@ -44,7 +44,7 @@ void main() {
           () => logService.register(
             log: infoLog,
           ),
-          prints('2023-11-13T21:05:27.000Z - [INFO] - This is an info.\n'),
+          prints('2023-11-13T18:05:27.000 - [INFO] - This is an info.\n'),
         );
       },
     );
@@ -64,7 +64,7 @@ void main() {
           () => logService.register(
             log: debugLog,
           ),
-          prints('2023-11-13T21:06:24.000Z - [DEBUG] - This is a debug.\n'),
+          prints('2023-11-13T18:06:24.000 - [DEBUG] - This is a debug.\n'),
         );
       },
     );
@@ -84,7 +84,7 @@ void main() {
           () => logService.register(
             log: debugLog,
           ),
-          prints('2023-11-13T21:07:10.000Z - [SUCCESS] - This is a success.\n'),
+          prints('2023-11-13T18:07:10.000 - [SUCCESS] - This is a success.\n'),
         );
       },
     );

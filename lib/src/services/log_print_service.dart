@@ -8,7 +8,7 @@ final class LogPrintService implements LogService {
   Future<void> register({
     required Log log,
   }) async {
-    final String dateTime = log.createdAt.toUtc().toIso8601String();
+    final String dateTime = log.createdAt.toIso8601String();
     final String type = log.type.value;
     final String message = log.message;
 

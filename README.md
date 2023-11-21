@@ -22,12 +22,12 @@ void main() {
     log: Log(
       type: LogType.success,
       message: 'The operation XPTO succedded.',
-      createdAt: DateTime.now(),
+      createdAt: DateTime(2023, 11, 13, 18, 06, 24),
     ),
   );
 
   // Prints:
-  // 2023-11-21T19:58:43.234834Z - [SUCCESS] - The operation XPTO succedded.
+  // 2023-11-13T18:06:24.000 - [SUCCESS] - The operation XPTO succedded.
 }
 ```
 Feito com &hearts; por Ivan Wilhelm.
