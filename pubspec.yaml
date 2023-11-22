@@ -1,6 +1,6 @@
 name: iw_logger
 description: This project is an implementation that allow developers to encapsulate their own usage of a logger.
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/euivanw/iw_logger
 
 topics:
